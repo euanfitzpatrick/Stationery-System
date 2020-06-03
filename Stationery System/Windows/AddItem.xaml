@@ -1,0 +1,29 @@
+﻿<Window x:Class="Stationery_System.Windows.AddItem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stationery_System.Windows"
+        mc:Ignorable="d"
+        Title="Add Item" Height="250" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Label HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" Grid.Row="0">Item Name:</Label>
+        <Label HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" Grid.Row="1">Item Price:</Label>
+        <Label HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" Grid.Row="2">Item Quantity:</Label>
+        <TextBox x:Name="TxtItemName" Margin="5" Grid.Column="1" Grid.Row="0" Width="300" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="TxtItemPrice" Margin="5" Grid.Column="1" Grid.Row="1" Width="300" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="TxtItemQuantity" Margin="5" Grid.Column="1" Grid.Row="2" Width="300" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="BtnAddItem" Click="BtnAddItem_Click" Margin="5" Grid.Column="1" Grid.Row="3" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center">Add</Button>
+    </Grid>
+</Window>
